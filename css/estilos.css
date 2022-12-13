@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--open-sans);
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+:root{
+    --open-sans: 'Open sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/*Mis Proyectos*/
+
+.contenedor_proyectos{
+    width: 100%;
+    text-align: center;
+}
+
+/*Contacto*/
+.contenedor_contacto{
+    width: 90%;
+}
+
+.formulario_contacto{
+    width: 100%;
+    display: flex;
+}
+
+.formulario_contacto textarea,.formulario_contacto input{
+    font-size: 16px;
+    border: 1px #808080 solid;
+    background-color: #fff;
+}
+
+.formulario_contacto input{
+    height: 2.4rem;
+}
+
+input[type="submit"]{
+    border: 1px solid #000000;
+    border-radius: 100px;
+}
+  
+input[type="submit"]:hover{
+    background-color: #000000;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+/*Index*/
+
+.contenedor_index{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+
+.texto_index{
+    position: absolute;
+    top:54px;
+}
+
+/*MOBILE*/
+@media screen and (max-width:375px),
+        screen and (max-height:1484px){
+    body{
+        max-width: 375px;
+        max-height: 1484px;
+    } 
+
+    /*Mis Proyectos*/    
+    .contenedor_proyectos{
+        position: absolute;
+        top: 76px;
+    }
+    .cuerpo_proyectos{
+        position: relative;
+        top: 5px;
+    }
+
+    .imagenes_proyectos{
+        display: flex;
+        flex-direction: column;
+        gap:38px;
+    }
+}
+
+@media screen and (max-width:375px),
+screen and(max-height:919px){
+    body{
+        max-width: 375px;
+        max-height: 919px;
+    }
+
+    .header_desktop, .footer_desktop{
+        display: none;
+    }
+
+    /*Sobre Mi*/
+    .contenedor_sobreMi{
+        position: absolute;
+        margin: 76px 20px 0 20px;
+
+    }
+
+    .titulo_sobreMi{
+        position: relative;
+        margin-left: -4px;
+    }
+
+    .texto_sobreMi{
+        margin-top: 16px;
+    }
+
+    /*Contacto*/
+    .contenedor_contacto{
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+    }
+    .p_contacto{
+        margin: 16px 0px;
+    }
+
+    .formulario_contacto,.inputs_nomape{
+        flex-direction: column;
+        justify-content: space-around;
+        gap:30px;
+    }
+
+    .formulario_contacto{
+        margin: 76px 0px;
+    }
+
+    .inputs_nomape{
+        display: flex;
+        width: 100%;
+    }
+
+   
+}
+
+@media screen and (max-width:375px),
+screen and (max-height:812px){
+     /*Index*/
+    body{
+        max-width: 375px;
+        max-height: 812px;
+    }
+
+    .texto_index a[href="portfolio.html"]{
+        display: none;
+    } 
+
+    #ellipse-1{
+        width: 2.5%;
+        left: 64px;
+        top: 300px;
+        border-radius: 0px;
+        position: absolute;
+    }
+
+    #ellipse-2{
+        width: 7%;
+        left: 102px;
+        top: 207px;
+        border-radius: 0px;
+        position: absolute;
+    }
+
+    #ellipse-3{
+        width: 18%;
+        left: 21px;
+        top: 180px;
+        border-radius: 0px;
+        position: absolute;
+    }
+
+    #ellipse-4{
+        width: 18%;
+        left: 121px;
+        top: 265px;
+        border-radius: 0px;
+        position: absolute;
+    }
+
+    #foto-lu{
+        width: 42%;
+        left: 194px;
+        top: 243px;
+        border-radius: 0px;
+        position: absolute;
+    }
+
+    #ellipse-5{
+        width: 55%;
+        left: 16px;
+        top: 416px;
+        border-radius: 0px;
+        position: absolute;
+
+    }
+
+    #ellipse-6{
+            width: 60%;
+            left: 106px;
+            top: 366px;
+            border-radius: 0px;
+            position: absolute;
+            z-index: -1;
+    }
+     
+}
+
+/*DESKTOP*/
+/*footer*/
+@media (min-width:376px){
+
+    .header_mobile, .footer_mobile{
+        display: none;
+    }
+
+    .footer_desktop{
+        height: 90px;
+        padding:35px 35px;
+        text-align: center;
+        color:#fff;
+        background-color: #000000;
+    }
+
+/*body*/
+    body{
+        margin-top: 90px ;
+        max-width: 1280px;
+        max-height: 810px;
+    }
+
+
+
+/*header barra de navegación */
+    nav{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        padding-top: 35px;
+    }
+
+    .header_desktop{
+        width: 90%;
+        list-style-type:none;
+        overflow: hidden;
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_enlaces, .luciana{
+    padding: 8px;
+    margin-bottom: 0;
+   }
+
+   .header_enlaces{
+    display: flex;
+   }
+  
+    .header_enlaces li {
+        float:right;
+        flex-direction: row;
+    }
+
+ 
+    .header_desktop li a{
+        padding: 8px;
+        color:#000000;
+    }
+
+    .header_desktop li a:hover{
+        background-color: black;
+        color: #ccc;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+/*Sobre Mi*/
+    .contenedor_sobreMi{
+        position: absolute;
+        width: 62%;
+        left: 240px;
+        top: 150px;
+    }
+    .titulo_sobreMi{
+        text-align: center;
+
+    }
+    .texto_sobreMi{
+        margin-top: 32px;
+    }
+
+/*Mis Proyectos*/
+    .contenedor_proyectos{
+        position: absolute;
+        width: 100%;
+    }
+
+    .titulo_proyectos{
+        position: relative;
+        top:10px;
+    }
+
+    .cuerpo_proyectos{
+        position: relative;
+        margin:10px;
+        padding: 10px;
+    }
+
+    .imagenes_proyectos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 10px;
+    }
+
+/*Contacto*/
+    .contenedor_contacto{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        margin-top: 60px;
+        justify-content: space-around;
+    }
+
+    .main_contacto{
+        width: 45%;
+        display: flex;
+        flex-direction:column;
+        margin-left: 175px;
+        padding: 25px;
+    }
+
+    .titulo_contacto{
+        height: 54px;
+    }
+
+    .p_contacto{
+        margin-top: 32px;
+    }
+
+    .seccion_contacto{
+        width: 55%;
+        margin-right: 80px;
+        display: flex;
+    }
+
+    .formulario_contacto{
+        flex-direction:column;
+        width: 100%;
+        justify-content: space-around;
+        gap:30px;    
+    }
+
+    .inputs_nomape{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #nombre, #apellido{
+        width: 45%;
+    }
+
+    input[type="submit"]{
+        width: 79px;
+        height: 38px;
+    }
+
+/*Index*/
+    .texto_index{
+        left:175px;
+    }
+
+    #ellipse-1{
+        position: absolute;
+        width: 0.86%;
+        left: 159.546630859375px;
+        top: 515px;
+        border-radius: 0px;
+    }
+
+    #ellipse-2{
+        position: absolute;
+        width: 3%;
+        left: 208.5491943359375px;
+        top: 386px;
+        border-radius: 0px;
+    }
+
+    #ellipse-3{
+        position: absolute;
+        width: 7.23%;
+        left: 304.14013671875px;
+        top: 540px;
+        border-radius: 0px;
+    }
+
+    #ellipse-4{
+        position: absolute;
+        width: 7.23%;
+        left: 62.1427001953125px;
+        top: 231px;
+        border-radius: 0px;
+    }
+
+    #ellipse-5{
+        position: absolute;
+        width: 37%;
+        left: 473px;
+        top: 247px;
+        border-radius: 0px;
+        z-index: -1;
+
+    }
+
+    #ellipse-6{
+        position: absolute;
+        width: 41.5%;
+        left: 668px;
+        top: 120px;
+        border-radius: 0px;
+    }
+
+    #foto-lu{
+        width: 22%;
+        left:920px;
+        top: 90px;
+        border-radius: 0px;
+        position: absolute;
+    }
+
+    .texto_index p{
+        margin: 32px 0px;
+        width: 382px;
+        height: 54px;
+    }
+
+    .texto_index a[href="portfolio.html"]{
+        display: block;
+        border: 1px solid #000000;
+        color: #000000;
+        border-radius: 100px;
+        height: 38px;
+        width: 109px;
+        padding: 8px 16px 8px 16px;
+        font-size: 16px;
+
+    } 
+}
