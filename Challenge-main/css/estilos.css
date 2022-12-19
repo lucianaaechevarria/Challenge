@@ -43,8 +43,7 @@ footer{
 }
 
 .formulario_contacto textarea,.formulario_contacto input{
-    font-size: 1rem;
-    font-family: Roboto;
+    font-size: 0.8rem;
     font-weight: 500;
     border: 0.05rem #808080 solid;
     background-color: #fff;
@@ -469,13 +468,24 @@ screen and (max-height:812px){
     margin: 0.5rem;
     padding: 0.5rem;
 }
-/*
+
 .div_img_bco_patagonia, .div_img_bodas, .div_img_glucose{
     margin: 0;
     padding: 0;
     background-color: #317660D4;
+    overflow: hidden;
+    flex-direction: column;
 }
-*/
+.p_bco_pat{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(136, 127, 255);
+    align-items: center;
+}
+
+
+}
 /*
 .imagenes_proyectos img[src="css/imagenes/rediseño-banco-patagonia.png"]{
     background-color: #317660D4;
@@ -490,20 +500,11 @@ screen and (max-height:812px){
     transition-property: background-color 300ms line 0;
 }
 
-.p_bco_pat, .p_mas {
-    background-color: #317660D4;
-    color:#fff;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    display: none;    
-}
 
 .imagenes_proyectos img[src="css/imagenes/rediseño-banco-patagonia.png"]:hover,
 .imagenes_proyectos img[src="css/imagenes/app-bodas.png"]:hover,
 .imagenes_proyectos img[src="css/imagenes/glucose-log.png"]:hover{
-    background-color: #317660D4;
+   /* background-color: #317660D4;*/
     transform: scale(0.9);
     opacity: 50%;
 }
