@@ -474,28 +474,75 @@ screen and (max-height:812px){
     padding: 0;
     background-color: #317660D4;
     overflow: hidden;
-    flex-direction: column;
+    
 }
-.p_bco_pat{
+
+.p_bco_pat_mas, .p_bco_pat_glucosa, .p_org_boda_mas, .p_org_boda, .p_glucose_mas, .p_glucose{
     display: flex;
     justify-content: center;
-    position: absolute;
-    background-color: rgb(136, 127, 255);
+    color:rgb(255, 255, 255);
     align-items: center;
+    visibility: hidden;
+    }
+
+.p_bco_pat_mas{
+    position: absolute;
+    left: 16.67%;
+    top: 50%;
+    font-size: 5rem;
+}
+
+.p_org_boda_mas{
+    position: absolute;
+    left: 16.67%;
+    right: 16.67%;
+    top: 50%;
+    font-size: 5rem;
+}
+
+.p_glucose_mas{
+    position: absolute;
+    left: 82%;
+    top: 50%;
+    font-size: 5rem;
+}
+.p_glucose{
+    position: absolute;
+    right: 9%;
+    top: 76.69%;
+    bottom: 17.07%;
+    font-size: 1rem;
 }
 
 
+.p_bco_pat_glucosa{
+    position: absolute;
+    left: 12%;
+    top: 76.69%;
+    bottom: 17.07%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.15rem;
 }
-/*
-.imagenes_proyectos img[src="css/imagenes/rediseño-banco-patagonia.png"]{
-    background-color: #317660D4;
-    background-size: cover;
+
+.p_org_boda{
+    position: absolute;
+    left: 45%;
+    top: 76.69%;
+    bottom: 17.07%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.15rem;
 }
-.imagenes_proyectos img[src="css/imagenes/rediseño-banco-patagonia.png"]:hover{
-    transform: scale(0.9) ;
-    transition-duration: 300ms;
-    opacity: 50%;
-}*/
+
+.p_bco_pat_mas:hover, .p_bco_pat_glucosa:hover, .p_org_boda_mas:hover, .p_org_boda:hover, .p_glucose_mas:hover, .p_glucose:hover{
+    visibility: visible;
+}
+
 .imagenes_proyectos img[src="css/imagenes/rediseño-banco-patagonia.png"]{
     transition-property: background-color 300ms line 0;
 }
